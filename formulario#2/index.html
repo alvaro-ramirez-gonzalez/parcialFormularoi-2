@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Empleado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Registro de Empleado</h1>
+    <form id="employee-form">
+      <div class="mb-4">
+        <h4 class="border-bottom pb-2">Datos Personales</h4>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="tipo-documento" class="form-label">Tipo de documento</label>
+            <select id="tipo-documento" class="form-select" name="tipo-documento">
+              <option value="">Seleccione</option>
+              <option value="cc">Cédula de ciudadanía</option>
+              <option value="ti">Tarjeta de identidad</option>
+              <option value="ce">Cédula de extranjería</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="numero-documento" class="form-label">Número de documento</label>
+            <input type="text" id="numero-documento" class="form-control" name="numero-documento">
+          </div>
+          <div class="col-md-6">
+            <label for="primer-nombre" class="form-label">Primer nombre</label>
+            <input type="text" id="primer-nombre" class="form-control" name="primer-nombre">
+          </div>
+          <div class="col-md-6">
+            <label for="segundo-nombre" class="form-label">Segundo nombre</label>
+            <input type="text" id="segundo-nombre" class="form-control" name="segundo-nombre">
+          </div>
+          <div class="col-md-6">
+            <label for="primer-apellido" class="form-label">Primer apellido</label>
+            <input type="text" id="primer-apellido" class="form-control" name="primer-apellido">
+          </div>
+          <div class="col-md-6">
+            <label for="segundo-apellido" class="form-label">Segundo apellido</label>
+            <input type="text" id="segundo-apellido" class="form-control" name="segundo-apellido">
+          </div>
+          <div class="col-md-6">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" id="telefono" class="form-control" name="telefono">
+          </div>
+          <div class="col-md-6">
+            <label for="celular" class="form-label">Celular</label>
+            <input type="tel" id="celular" class="form-control" name="celular">
+          </div>
+          <div class="col-md-12">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" class="form-control" name="email">
+          </div>
+          <div class="col-md-6">
+            <label for="fecha-nacimiento" class="form-label">Fecha de nacimiento</label>
+            <input type="date" id="fecha-nacimiento" class="form-control" name="fecha-nacimiento">
+          </div>
+          <div class="col-md-6">
+            <label for="genero" class="form-label">Género</label>
+            <select id="genero" class="form-select" name="genero">
+              <option value="">Seleccione</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="municipio-residencia" class="form-label">Municipio de residencia</label>
+            <select id="municipio-residencia" class="form-select" name="municipio-residencia">
+              <option value="">Seleccione</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" id="direccion" class="form-control" name="direccion">
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección: Datos Laborales -->
+      <div class="mb-4">
+        <h4 class="border-bottom pb-2">Datos Laborales</h4>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="empresa" class="form-label">Seleccionar empresa</label>
+            <select id="empresa" class="form-select" name="empresa">
+              <option value="">Seleccione</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="cargo" class="form-label">Cargo</label>
+            <input type="text" id="cargo" class="form-control" name="cargo">
+          </div>
+          <div class="col-md-6">
+            <label for="dependencia" class="form-label">Dependencia</label>
+            <input type="text" id="dependencia" class="form-control" name="dependencia">
+          </div>
+          <div class="col-md-6">
+            <label for="estado" class="form-label">Estado</label>
+            <input type="text" id="estado" class="form-control" name="estado">
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">ENVIAR</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- JS de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
